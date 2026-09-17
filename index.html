@@ -453,7 +453,7 @@
         <div class="mini-value" id="kpiBank">0</div>
       </div>
       <div class="mini-card">
-        <div class="mini-icon savings">🐷</div>
+        <div class="mini-icon savings">🎯</div>
         <div class="mini-label">ادخار</div>
         <div class="mini-value" id="kpiSavings">0</div>
       </div>
@@ -519,7 +519,7 @@
           <input type="number" id="openingBankInput" placeholder="0">
         </div>
         <div class="field">
-          <label>🐷 ادخار (جنيه)</label>
+          <label>🎯 ادخار (جنيه)</label>
           <input type="number" id="openingSavingsInput" placeholder="0">
         </div>
         <button class="btn btn-primary btn-block" onclick="saveOpeningBalance()">حفظ الرصيد</button>
@@ -572,7 +572,7 @@
           <select id="incAccount">
             <option value="cash">💵 نقدي</option>
             <option value="bank">🏦 بنك</option>
-            <option value="savings">🐷 ادخار</option>
+            <option value="savings">🎯 ادخار</option>
           </select>
         </div>
         <div class="field"><label>المسؤول</label><select id="incMember"></select></div>
@@ -618,7 +618,7 @@
           <select id="expAccount">
             <option value="cash">💵 نقدي</option>
             <option value="bank">🏦 بنك</option>
-            <option value="savings">🐷 ادخار</option>
+            <option value="savings">🎯 ادخار</option>
           </select>
         </div>
         <div class="field"><label>المسؤول</label><select id="expMember"></select></div>
@@ -721,7 +721,7 @@
             <option value="all">الكل</option>
             <option value="cash">💵 نقدي</option>
             <option value="bank">🏦 بنك</option>
-            <option value="savings">🐷 ادخار</option>
+            <option value="savings">🎯 ادخار</option>
           </select>
         </div>
         <button class="btn btn-outline" onclick="renderReport()">🔍 تطبيق الفلتر</button>
@@ -825,7 +825,7 @@ const budgetDocRef = doc(db, 'households', 'main');
 const ACCOUNTS = {
   cash:    {label: '💵 نقدي'},
   bank:    {label: '🏦 بنك'},
-  savings: {label: '🐷 ادخار'}
+  savings: {label: '🎯 ادخار'}
 };
 
 function defaultData(){
